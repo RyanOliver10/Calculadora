@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.calculadora {
+  width: 400px;
+}
+
+h1{
+  color: red;
+}
+
+.display {
+  font-size: 2em;
+  width: 100%;
+  text-align: right;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  font-size: 1em;
+  border: none;
+  background: #dfdfdf;
+  cursor: pointer;
+}
+
+#btn-eq{
+  background: rgb(11, 105, 199);
+}
+
+#btn-eq:hover {
+  background: rgb(26, 212, 26);
+}
+
+.btn:hover {
+  background: #9e9e9e;
+}
+
+@media (max-width:650px) {
+  .container{
+    width: 400px;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  .display{
+    font-size: 1.5em;
+  }
+
+  .calculadora{
+    width: 300px;
+  }
+
+  .btn{
+    height: 40px;
+  }
+}
+
+@media (max-width:450px) {
+  .container{
+    width: 350px;
+  }
+
+  h1{
+    font-size: 1.2rem;
+  }
+
+  .display{
+    font-size: 1.2em;
+  }
+
+  .calculadora{
+    width: 250px;
+  }
+
+  .btn{
+    height: 30px;
+  }
+}
+
+@media (max-width:400px) {
+  .container{
+    width: 300px;
+  }
+
+  h1{
+    font-size: 1.2rem;
+  }
+
+  .display{
+    font-size: 1.2em;
+  }
+
+  .calculadora{
+    width: 200px;
+  }
+
+  .btn{
+    height: 30px;
+  }
+}
